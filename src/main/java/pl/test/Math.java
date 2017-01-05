@@ -26,11 +26,13 @@ public class Math {
         while(testNumber<=number)
         {
 
-            if (testNumber%number==0){
+            if (number%testNumber==0){
+
                 factors.add(new Factors(testNumber,number/testNumber));
             }
 
             testNumber++;
+
         }
 
         return factors;
